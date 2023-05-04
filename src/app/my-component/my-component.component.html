@@ -1,0 +1,25 @@
+<div class="side-image-left"></div>
+
+<div class="center">
+   
+    Votre nom de dresseur : <input [(ngModel)]="nom">
+       
+    <BR>
+    <BR>
+    Recherche pokemon : <input [(ngModel)]="filterPokemon">
+    Je te choisis :   
+    <select [(ngModel)]="selectedPokeId">
+        <option [value]="pokemon.id" *ngFor="let pokemon of pokemons | filterPokemonPipe:'name':filterPokemon"  >  {{pokemon.name}} {{ pokemon.id }} 
+        </option> 
+    </select> 
+                
+    <button (click)="go()"> GO !</button>
+        
+    <BR>
+    <BR>
+    <div class="match_parent" *ngIf="pokeInfo">
+        <app-poke-info [info]="pokeInfo"> </app-poke-info>
+    </div>
+</div>
+
+<div class="side-image-right"></div>

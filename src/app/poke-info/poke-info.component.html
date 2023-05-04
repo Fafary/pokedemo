@@ -1,0 +1,24 @@
+Le Pokémon séléctionné est {{info.name}} de types : 
+
+<ul>
+    <li *ngFor="let type of info.types"> {{type.type.name}} </li>
+</ul>
+
+<img src={{info.sprites.front_default}}/>
+<img src={{info.sprites.back_default}}/>
+<img src={{info.sprites.front_shiny}}/>
+<img src={{info.sprites.back_shiny}}/>
+
+<BR>
+Talents : 
+<ul>
+    <li *ngFor="let ability of info.abilities"> {{ability.ability.name}} </li>
+</ul>
+
+
+<BR>
+
+Compétences : 
+<ul>
+    <li *ngFor="let move of info.moves"> {{move.move.name}} </li>
+</ul>

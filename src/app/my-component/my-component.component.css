@@ -1,0 +1,25 @@
+.center {
+    text-align: center;
+}
+
+.side-image-left {
+    background-image: url("https://i.pinimg.com/564x/51/76/cf/5176cfe3e7967f5973e49971b409789c.jpg");
+    background-repeat: repeat-y;
+    background-position: left top;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 19%;
+}
+  
+.side-image-right {
+    background-image: url("https://i.pinimg.com/564x/51/76/cf/5176cfe3e7967f5973e49971b409789c.jpg");
+    background-repeat: repeat-y;
+    background-position: right top;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 19%;
+}
